@@ -1,4 +1,6 @@
 body {
+    height: 100%;
+    margin: 0;
     background-color: papayawhip;
 }
 
@@ -34,6 +36,8 @@ nav > a {
     padding: 20px;
     text-align: center;
     border: 2px solid white;
+    display: flex;
+    justify-content: center;
 }
 
 .has-border {
@@ -74,7 +78,7 @@ header {
 }
 
 #profile-pic {
-    width: 100%;
+    width: 320px;
     height: 500px;
     margin: 0% auto;
 }
@@ -106,7 +110,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 80px;
-    width: 400px;
+    width: auto;
     background-color: hsla(227, 100%, 50%, 0.63);
     text-align: center;
 }
@@ -117,7 +121,7 @@ header {
     flex-direction: column;
     height: 100%;
     width: 100%;
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 h1 {
@@ -130,11 +134,12 @@ h1 {
 
 .info-submit {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    /* align-items: flex-start; */
     border: 2px solid black;
     border-bottom: none;
     border-right: none;
-    padding: 30px 0px 20px 40px;
+    padding: 30px 140px 0px 60px;
 }
 
 h2 {
@@ -149,27 +154,35 @@ h3 {
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .contact-container {
-    padding: 20px;
+    padding: 0px 20px 20px 60px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.info-container {
+    padding-left: 0;
+    text-align: start;
 }
 /* @media (min-width: 992px) {
 } */
 
 
-@media (max-width: 992px) {
+@media (max-width: 1000px) {
     .logo {
-        width: 200px;
+        width: 150px;
         height: 100px;
         margin: 0% 8%;
         align-items: center;
       }
 
     #profile-pic {
-        width: 400px;
+        width: 200px;
         height: 500px;
+        padding-bottom: 10px;
         margin: 0%;
         display: flex;
         justify-content: center;
@@ -179,8 +192,10 @@ p {
     nav {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         width: 100%;
-        padding-right: 2%;
+        padding-right: 0;
+       
     }
 
     header {
@@ -214,15 +229,46 @@ p {
 
     .info-container {
         padding-left: 20px;
-        width: 100%;
+        /* width: 100%; */
     }
 
     .info-submit {
-        width: 100%;
+        /* width: 100%; */
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 20px;
     }
 
     h1 {
         text-align: center;
+        font-size: 2.8em;    
     }
+
+    p {
+        font-size: 1.6em;
+        margin: auto;
+    }
+
+    .left-container>p {
+        font-size: 1.2em;
+    }
+
+    .contact-container {
+        padding-left: 20px;
+    }
+
+}
+
+@media (max-width: 300px) {
+    p {
+        font-size: 1.0em;
+        margin: auto;
+    }
+
+    .left-container>p {
+        font-size: 1.0em;
+    }
+
 }
 
