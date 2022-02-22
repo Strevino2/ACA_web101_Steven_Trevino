@@ -263,7 +263,7 @@ p {
 
 @media (max-width: 300px) {
     p {
-        font-size: 1.0em;
+        font-size: .8em;
         margin: auto;
     }
 
@@ -277,7 +277,14 @@ p {
     }
 
     #profile-pic {
-        width: auto;
+        width: 100%;
     }
+
+    .logo {
+        width: 100px;
+        height: 70px;
+        margin: 0% 0%;
+        align-items: center;
+      }
 }
 
