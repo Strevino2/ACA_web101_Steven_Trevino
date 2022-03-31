@@ -4,69 +4,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="contact-style.css">
   <script src="contact.js"></script>
-  <title>Document</title>
+  <title>Contact Page</title>
 </head>
 
-<body>
-  <div class="top-container">
-    <header>
-      <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo"
-        alt="austin coding academy logo">
-      <div class="header">
-        <div>Steven Trevino</div>
-        <br>
-        <div>Student of Web Development</div>
-      </div>
-      <nav>
-        <a class="has-border about" href="./index.html">Home</a>
-        <a class="has-border about" href="./resume.html">Resume</a>
-        <a class="has-border about">Blog</a>
-        <a class="has-border about" href="./about.html">About Me</a>
-      </nav>
-    </header>
-  </div>
-  <div class="main-container">
-    <div class="left-container">
-      <img src="./myProfilePic.jpg" id="profile-pic" alt="Head shot of Me">
-      <p>“One of the best programming skills you can have is knowing when to walk away for a while.” – Oscar Godson </p>
+<body class="text-center">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+          <div class="inner">
+              <h3 class="masthead-brand">Contact</h3>
+              <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="resume.html">Resume</a>
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+              </nav>
+          </div>
+      </header>
+  <div class="whole-container">
+    <div class="top-container">
+      <header>
+        <!-- <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo"
+          alt="austin coding academy logo">
+        <div class="header">
+          <div>Steven Trevino</div>
+          <br>
+          <div>Student of Web Development</div>
+        </div>
+        <nav>
+          <a class="has-border about" href="./index.html">Home</a>
+          <a class="has-border about" href="./resume.html">Resume</a>
+          <a class="has-border about">Portfolio</a>
+          <a class="has-border about" href="./about.html">About</a>
+          <a class="has-border about" href="./contact.html">Contact</a>
+        </nav> -->
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="./index.html">Home</a>
+            <a class="dropdown-item" href="./resume.html">Resume</a>
+            <a class="dropdown-item" href="./about.html">About</a>
+            <a class="dropdown-item" href="./portfolio.html">Portfolio</a>
+            <a class="dropdown-item" href="./contact.html">Contact</a>
+          </div>
+        </div>
+      </header>
     </div>
-    <div class="right-container">
-      <h1>Contact Me</h1>
-      <br>
-      <div class="info-submit">
-        <div class="info-container">
-          <form action="results.html" method="GET" enctype="multipart/form-data">
-            <h2>Would you like to be contacted back? </h2>
-            <div>
-              <label for="contact me">Yes</label>
-              <input type="radio" name="contact me" id="yes" value="yes">
-              <label for="contact me">No</label>
-              <input type="radio" name="contact me" id="no" value="no">
-            </div>
-            <h2>Enter your info here to receive a special birthday wish!!</h2>
-            <div>
-              <br>
-              <label for="name">Full Name</label>
-              <input type="text" name="name" id="name">
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email">
-              <label>
-                Password
-                <input type="password" name="password">
-              </label>
-            </div>
-            <div>
-              <label for="age">Age</label>
-              <input type="number" name="age" id="age" min="1" max="200" step="5">
-              <label for="date">Birthdate</label>
-              <input type="date" name="date" id="date" min="2019-06-10">
-            </div>
-            <div>
-            </div>
+    <div class="main-container">
+      <!-- <div class="left-container">
+        <div class="image-container">
+
+          <img src="./myProfilePic.jpg" id="profile-pic" alt="Head shot of Me">
+        </div>
+        <p>“One of the best programming skills you can have is knowing when to walk away for a while.” – Oscar Godson
+        </p>
+      </div> -->
+      <div class="right-container">
+        <h1>Let's Talk</h1>
+        <br>
+        <div class="info-submit">
+          <div class="info-container">
+            <form action="results.html" method="GET" enctype="multipart/form-data">
+              <h2>Enter your info here to receive a special birthday wish!!</h2>
+              <div>
+                <br>
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name">
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label>
+                  Password
+                  <input type="password" name="password">
+                </label>
+              </div>
+              <div>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" min="1" max="200" step="5">
+                <label for="date">Birthdate</label>
+                <input type="date" name="date" id="date" min="2019-06-10">
+              </div>
+              <div>
+              </div>
             </Br>
             <div>
               Gender
@@ -82,23 +111,30 @@
                 <label for="other">Other</label>
                 <input type="radio" name="gender" id="other" value="other">
               </div>
-            </div>
-            </Br>
-            <h2>How did you hear about me?</h2>
-            <div>
-              <br>
-              <label for="How did you hear about me?">Classmate</label>
-              <input type="checkbox" name="Classmate" id="classmate">
-              <label for="How did you hear about me?">LinkIn</label>
-              <input type="checkbox" name="LinkIn" id="linkin">
-            </div>
-            <div>
-              <label for="How did you hear about me?">Resume Submission</label>
-              <input type="checkbox" name="Resume Submission" id="resume submission">
-              <label for="How did you hear about me?">Coding Academy Rec</label>
-              <input type="checkbox" name="Coding Academy" id="coding academy">
-            </div>
-            <!-- <div>
+              <h2>Would you like to be contacted back? </h2>
+              <div>
+                <label for="contact me">Yes</label>
+                <input type="radio" name="contact me" id="yes" value="yes">
+                <label for="contact me">No</label>
+                <input type="radio" name="contact me" id="no" value="no">
+              </div>
+              </div>
+              </Br>
+              <h2>How did you hear about me?</h2>
+              <div>
+                <br>
+                <label for="How did you hear about me?">Classmate</label>
+                <input type="checkbox" name="Classmate" id="classmate">
+                <label for="How did you hear about me?">LinkIn</label>
+                <input type="checkbox" name="LinkIn" id="linkin">
+              </div>
+              <div>
+                <label for="How did you hear about me?">Resume Submission</label>
+                <input type="checkbox" name="Resume Submission" id="resume submission">
+                <label for="How did you hear about me?">Coding Academy Rec</label>
+                <input type="checkbox" name="Coding Academy" id="coding academy">
+              </div>
+              <!-- <div>
           <label for="eyeColor">How did you hear about me? </label>
           <select name="eyeColor" id="eyeColor" multiple>
             <option value="Green">Classmate</option>
@@ -107,50 +143,60 @@
             <option label="Coding Academy Rec" value="Red"></option>
           </select>
           </div> -->
-            <br>
-            <div>
-              <label for="bio">Comments</label>
-              <textarea id="bio" name="bio"></textarea>
-            </div>
-            <br>
-            <input type="hidden" name="hidden" value="hi">
-            <!-- <div>
+              <br>
+              <div>
+                <label for="bio">Comments</label>
+                <textarea id="bio" name="bio"></textarea>
+              </div>
+              <br>
+              <input type="hidden" name="hidden" value="hi">
+              <!-- <div>
           <label for="file">File</label>
           <input id="file" type="file" name="file">
           </div> -->
-            <!-- <div>
+              <!-- <div>
           <label for="phone">Phone</label>
           <input type="tel" name="phone" id="phone">
           </div> -->
-            <!-- <div>
+              <!-- <div>
           <label for="url">URL</label>
           <input type="url" name="url" id="url">
           </div> -->
-            <!-- <div>
+              <!-- <div>
           <label for="color">Color</label>
           <input type="color" name="color" id="color">
           </div> -->
-            <div>
-            </div>
-            <button type="reset">Reset</button>
-            <button type="submit">Contact Me</button>
-          </form>
-        </div>
-        <div class="contact-container">
-          <h3>Contact</h3>
+              <div>
+              </div>
+              <button type="reset">Reset</button>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+          <div class="contact-container">
+            <h4>Contact</h4>
             <p>Strevino2@hotmail.com</p>
             <br>
             <br>
             <br>
             <br>
-            <h3>Based in</h3>
-              <p>The Hill Country of Texas</p>
+            <h4>Based in</h4>
+            <p>The Hill Country of Texas</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
   </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
