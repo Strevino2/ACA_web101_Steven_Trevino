@@ -97,7 +97,7 @@ body {
     }
   }
 
-@media (max-width: 492px) {
+@media (max-width: 495px) {
   .dropdown {
     display: block;
     padding-top: 40px;

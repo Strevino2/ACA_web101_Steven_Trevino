@@ -1,21 +1,20 @@
-a,
+a {
+  color: #6c757d;
+}
 a:focus,
 a:hover {
   color: #fff;
 }
 
 /* Custom default button */
-.btn-secondary,
+/* .btn-secondary,
 .btn-secondary:hover,
-.btn-secondary:focus,
-.btnclass,
-.btnclass:hover,
-.btnclass:focus {
+.btn-secondary:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
+  text-shadow: none;
   background-color: #fff;
   border: .05rem solid #fff;
-}
+} */
 
 
 /*
@@ -31,11 +30,31 @@ body {
 body {
   display: -ms-flexbox;
   display: flex;
-  color: #fff;
+  /* color: #fff; */
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
+.viewbtn {
+  color: #6c757d !important;
+  width: 200px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.viewbtn:hover {
+  color: white !important;
+  text-decoration: none;
+}
+
+h3 {
+  color: white;
+}
+
+.justify-content-between {
+  /* -ms-flex-pack: justify!important; */
+  justify-content: center !important;
+}
 /* .cover-container {
   max-width: 42em;
 } */
@@ -53,6 +72,7 @@ body {
   width: 41em;
   margin-left: auto!important;
   margin-right: auto!important;
+  padding-bottom: 40px;
 }
 
 
@@ -119,35 +139,41 @@ body {
     margin: 6px 0;
 }
 
-  @media (min-width: 768px) {
-    .jumbotron {
-      padding-top: 6rem;
-      padding-bottom: 6rem;
-    }
-  }
-  
-  .jumbotron p:last-child {
-    margin-bottom: 0;
-  }
-  
-  .jumbotron h1 {
-    font-weight: 300;
-  }
-  
-  .jumbotron .container {
-    max-width: 40rem;
-  }
-  
-  footer {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  
-  footer p {
-    margin-bottom: .25rem;
-  }
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
 
-@media (max-width: 492px) {
+.jumbotron h1 {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (max-width: 695px) {
+  .masthead {
+    width: auto;
+  }
+}
+
+@media (max-width: 495px) {
     .nav {
         display: none;
     }
@@ -155,7 +181,11 @@ body {
     .dropdown {
         display: block;
         padding-top: 40px;
-        padding-bottom: 20px;
+        padding-bottom: 40px;
+    }
+
+    .masthead {
+      padding-bottom: 20px;
     }
 }
 
