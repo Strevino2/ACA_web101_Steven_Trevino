@@ -157,10 +157,10 @@ article {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr; */
-    /* justify-content: space-around; */
+  color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 section {
@@ -183,10 +183,10 @@ section {
 }
 
 footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row: 1fr 1fr 1fr;
-    color: blue;
+  color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
     /* justify-content: space-around; */
 }
 
@@ -305,8 +305,8 @@ ul {
 }
 
 .other-awards {
-    grid-column: 2/3;
-    grid-row: 1/2;
+ display: flex;
+ flex-direction: column;
 }
 
 .side>h2 {
@@ -343,13 +343,13 @@ li {
   }
 
   @media (max-width: 898px) {
-    section {
+    /* section {
       flex-direction: column;
     }
 
     main {
       grid-template-columns: 1fr;
-    }
+    } */
   }
 
   
