@@ -89,10 +89,6 @@ body {
     align-items: center; 
 }
 
-header {
-  color: blue;
-}
-
 .main-container {
     margin: auto;
     justify-content: center;
