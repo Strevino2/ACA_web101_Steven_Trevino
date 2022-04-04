@@ -89,6 +89,10 @@ body {
     align-items: center; 
 }
 
+header {
+  color: blue;
+}
+
 .main-container {
     margin: auto;
     justify-content: center;
@@ -179,6 +183,9 @@ article>h2 {
     flex-direction: column;
 }
 
+h3 {
+  color: white;
+}
 
 h2 {
   margin: 0;
