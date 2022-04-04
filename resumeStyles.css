@@ -292,7 +292,7 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px 20px 40px 0px;
+    padding: 20px 20px 0px 0px;
 }
 
 .academic-history {
